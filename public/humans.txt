@@ -1,4 +1,4 @@
-__  __  __
+﻿__  __  __
 \ \ \ \ \/
  \ \/\ \
   \/  \/
@@ -8,22 +8,17 @@ and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+DEVELOPER
 
-Hamish Williams
+Raghav Duggal
 Hand crafted design & web development
 
-Design tools:
-Figma
-Photoshop
-Blender
-
-twitter.com/hamishmw
-github.com/hamishmw
+linkedin.com/in/raghavduggal06
+github.com/Maverickrd007
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGY
 
 React
 Remix
@@ -32,8 +27,7 @@ Framer Motion
 
 _______________________________________________________________________________
 
-FONTS | フォント
+FONTS
 
 Gotham
-IPA Gothic Regular
-Hiragino Kaku Gothic W8
+Noto Sans Devanagari

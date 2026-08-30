@@ -1,0 +1,81 @@
+.video {
+  width: 120%;
+
+  @media (--mediaLaptop) {
+    width: 150%;
+  }
+
+  @media (--mediaTablet) {
+    width: 100%;
+  }
+}
+
+.sidebarImages {
+  display: grid;
+  grid-template-columns: repeat(6, [col] 1fr);
+  align-items: center;
+
+  @media (--mediaTablet) {
+    padding: 0 80px;
+    margin-top: 60px;
+  }
+
+  @media (--mediaMobile) {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+}
+
+.sidebarImage {
+  &:first-child {
+    grid-column: col 1 / span 4;
+    grid-row: 1;
+    position: relative;
+    top: 5%;
+    opacity: 0.4;
+  }
+
+  &:last-child {
+    grid-column: col 3 / span 4;
+    grid-row: 1;
+    position: relative;
+    top: -5%;
+  }
+}
+/* Globe Component CSS */
+.globeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.globeSphere {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2), -5px 0 8px #c3f4ff inset, 15px 2px 25px #000 inset, -24px -2px 34px #c3f4ff99 inset, 250px 0 44px #00000066 inset, 150px 0 38px #000000aa inset;
+  background-image: url('https://pub-940ccf6255b54fa799a9b01050e6c227.r2.dev/globe.jpeg');
+  background-size: cover;
+  background-position: left;
+  animation: earthRotate 30s linear infinite;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes earthRotate {
+  0% { background-position: 0 0; }
+  100% { background-position: 400px 0; }
+}
+@keyframes twinkling { 0%,100% { opacity:0.1; } 50% { opacity:1; } }
+@keyframes twinkling-slow { 0%,100% { opacity:0.1; } 50% { opacity:1; } }
+@keyframes twinkling-long { 0%,100% { opacity:0.1; } 50% { opacity:1; } }
+@keyframes twinkling-fast { 0%,100% { opacity:0.1; } 50% { opacity:1; } }

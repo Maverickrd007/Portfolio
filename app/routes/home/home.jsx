@@ -4,9 +4,9 @@ import gamestackTexture2 from '~/assets/gamestack-list.jpg';
 import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
+import astramlTexture from '~/assets/astraml-laptop.png';
+import codelensTexture from '~/assets/codelens-laptop.png';
+import vibeguardTexture from '~/assets/vibeguard-laptop.png';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
@@ -41,8 +41,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: '',
+    description: `Portfolio of ${config.name} — a Cloud Security Engineer focusing on AI, DevSecOps, and Platform Engineering.`,
   });
 };
 
@@ -103,17 +103,17 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="VibeGuard"
+        description="An enterprise-oriented DevSecOps orchestration platform that centralizes security scanning, vulnerability analysis, and AI-assisted remediation."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/vibeguard"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'VibeGuard DevSecOps platform',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
+              srcSet: `${vibeguardTexture} 1280w, ${vibeguardTexture} 2560w`,
+              placeholder: vibeguardTexture,
             },
           ],
         }}
@@ -124,21 +124,17 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="CodeLens"
+        description="An AI-powered codebase analysis platform for understanding large software repositories through automated code parsing and structural analysis."
+        buttonText="View project"
+        buttonLink="/projects/codelens"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'CodeLens analysis interface',
           textures: [
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: `${codelensTexture} 800w, ${codelensTexture} 1920w`,
+              placeholder: codelensTexture,
             },
           ],
         }}
@@ -148,17 +144,17 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="AstraML"
+        description="A machine-learning platform supporting data preprocessing, model training, evaluation and inference workflows."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/astraml"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'AstraML data visualization',
           textures: [
             {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
+              srcSet: `${astramlTexture} 800w, ${astramlTexture} 1920w`,
+              placeholder: astramlTexture,
             },
           ],
         }}

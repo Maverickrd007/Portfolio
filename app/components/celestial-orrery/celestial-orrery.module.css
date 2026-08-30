@@ -1,0 +1,89 @@
+﻿.heroSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--background);
+}
+
+.orreryField {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid color-mix(in lab, var(--text) 15%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit1 { width: 35%; height: 35%; animation: orbitRotate 20s linear infinite; }
+.orbit2 { width: 55%; height: 55%; animation: orbitRotate 30s linear infinite reverse; }
+.orbit3 { width: 75%; height: 75%; animation: orbitRotate 40s linear infinite; }
+.orbit4 { width: 95%; height: 95%; animation: orbitRotate 50s linear infinite reverse; }
+
+.securityShield {
+  position: absolute;
+  top: -13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  color: var(--accent);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px color-mix(in lab, var(--accent) 50%, transparent));
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.securityShield svg {
+  width: 100%;
+  height: 100%;
+}
+
+.orbit1 .securityShield { animation-delay: 0s; }
+.orbit2 .securityShield { animation-delay: 0.8s; }
+.orbit3 .securityShield { animation-delay: 1.6s; }
+.orbit4 .securityShield { animation-delay: 2.4s; }
+
+@keyframes orbitRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.glyphField {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glyphContainer {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed color-mix(in lab, var(--accent) 20%, transparent);
+}
+
+.glyph1 { width: 45%; height: 45%; animation: orbitRotate 45s linear infinite; }
+.glyph2 { width: 65%; height: 65%; animation: orbitRotate 35s linear infinite reverse; }
+.glyph3 { width: 85%; height: 85%; animation: orbitRotate 55s linear infinite; }

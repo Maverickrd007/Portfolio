@@ -9,7 +9,7 @@ import {
   useNavigation,
   useRouteError,
 } from '@remix-run/react';
-import { createCookieSessionStorage, json } from '@remix-run/cloudflare';
+import { createCookieSessionStorage, json } from '@remix-run/node';
 import { ThemeProvider, themeStyles } from '~/components/theme-provider';
 import GothamBook from '~/assets/fonts/gotham-book.woff2';
 import GothamMedium from '~/assets/fonts/gotham-medium.woff2';
@@ -38,6 +38,9 @@ export const links = () => [
     type: 'font/woff2',
     crossOrigin: '',
   },
+  { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+  { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
+  { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@700;900&display=swap' },
   { rel: 'manifest', href: '/manifest.json' },
   { rel: 'icon', href: '/favicon.ico' },
   { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
@@ -59,7 +62,7 @@ export const loader = async ({ request, context }) => {
       maxAge: 604_800,
       path: '/',
       sameSite: 'lax',
-      secrets: [context.cloudflare.env.SESSION_SECRET || ' '],
+      secrets: [process.env.SESSION_SECRET || ' '],
       secure: true,
     },
   });

@@ -1,11 +1,13 @@
 {
-  "name": "Hamish Williams",
-  "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
-  "url": "https://hamishw.com",
-  "bluesky": "hamishw.com",
-  "figma": "@Hamish",
-  "github": "HamishMW",
-  "repo": "https://github.com/HamishMW/portfolio",
-  "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
+  "name": "Raghav Duggal",
+  "role": "Cloud & Security Engineer",
+  "disciplines": ["Software Engineering", "Platform Engineering", "DevSecOps"],
+  "url": "https://github.com/Maverickrd007",
+  "bluesky": "",
+  "figma": "",
+  "github": "Maverickrd007",
+  "linkedin": "raghavduggal06",
+  "email": "raghavduggal06@gmail.com",
+  "repo": "https://github.com/Maverickrd007/Portfolio",
+  "ascii": "__  __  __\n\\ \\ \\ \\ \\/\n \\ \\/\\ \\\n  \\/  \\/\n"
 }

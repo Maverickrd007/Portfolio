@@ -168,6 +168,10 @@
   }
 }
 
+.discipline {
+  font-size: clamp(1.5rem, 4.5vw, var(--fontSizeH2));
+}
+
 @keyframes introLine {
   0% {
     transform: scaleX(0);
@@ -229,7 +233,7 @@
   }
 }
 
-.scrollIndicator {
+.scrollIndicator { display: none;
   border: 2px solid color-mix(in lab, var(--text) 40%, transparent);
   border-radius: 20px;
   width: 26px;
@@ -296,7 +300,7 @@
   }
 }
 
-.mobileScrollIndicator {
+.mobileScrollIndicator { display: none;
   position: fixed;
   bottom: 0;
   opacity: 0;
@@ -333,4 +337,11 @@
   &:focus-visible {
     opacity: 1;
   }
+}
+.roleRow {
+  font-size: 1.15em;
+}
+
+.disciplineRow {
+  font-size: 0.85em;
 }

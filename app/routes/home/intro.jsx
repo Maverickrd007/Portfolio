@@ -8,7 +8,7 @@ import { VisuallyHidden } from '~/components/visually-hidden';
 import { Link as RouterLink } from '@remix-run/react';
 import { useInterval, usePrevious, useScrollToHash } from '~/hooks';
 import { Suspense, lazy, useEffect, useState } from 'react';
-import { cssProps } from '~/utils/style';
+import { cssProps, classes } from '~/utils/style';
 import config from '~/config.json';
 import { useHydrated } from '~/hooks/useHydrated';
 import styles from './intro.module.css';
@@ -72,22 +72,31 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               <h1 className={styles.name} data-visible={visible} id={titleId}>
                 <DecoderText text={config.name} delay={500} />
               </h1>
-              <Heading level={0} as="h2" className={styles.title}>
-                <VisuallyHidden className={styles.label}>
-                  {`${config.role} + ${introLabel}`}
-                </VisuallyHidden>
-                <span aria-hidden className={styles.row}>
-                  <span
-                    className={styles.word}
-                    data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
-                  >
-                    {config.role}
+                <Heading level={0} as="h2" className={styles.title}>
+                  <VisuallyHidden className={styles.label}>
+                    {`${config.role} + ${introLabel}`}
+                  </VisuallyHidden>
+                  <span aria-hidden className={classes(styles.row, styles.roleRow)}>
+                    <span
+                      className={styles.word}
+                      data-status={status}
+                      style={cssProps({ delay: tokens.base.durationXS })}
+                    >
+                      {config.role.substring(0, config.role.lastIndexOf(' '))}
+                    </span>
                   </span>
-                  <span className={styles.line} data-status={status} />
-                </span>
-                <div className={styles.row}>
-                  {disciplines.map(item => (
+                  <span aria-hidden className={classes(styles.row, styles.roleRow)}>
+                    <span
+                      className={styles.word}
+                      data-status={status}
+                      style={cssProps({ delay: tokens.base.durationXS })}
+                    >
+                      {config.role.substring(config.role.lastIndexOf(' ') + 1)}
+                    </span>
+                    <span className={styles.line} data-status={status} />
+                  </span>
+                  <div className={classes(styles.row, styles.disciplineRow)}>
+                    {disciplines.map(item => (
                     <Transition
                       unmount
                       in={item === currentDiscipline}
