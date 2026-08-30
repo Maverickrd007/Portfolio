@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <defs>
     <symbol id="katakana-project" viewBox="0 0 751 136">
-      <text x="50%" y="50%" dy="0.35em" dominant-baseline="middle" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-weight="900" font-size="130" letter-spacing="0.2em" fill="currentColor">निर्माण</text>
+      <text x="50%" y="50%" dy="0.35em" dominant-baseline="middle" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-weight="900" font-size="130" letter-spacing="0.2em" fill="currentColor">परियोजनाएं</text>
     </symbol>
     <symbol id="katakana-profile" viewBox="0 0 136 766">
       <text font-family="'Noto Sans Devanagari', sans-serif" font-weight="900" font-size="130" fill="currentColor" text-anchor="middle">
-        <tspan x="50%" y="203">रा</tspan>
-        <tspan x="50%" y="383">घ</tspan>
-        <tspan x="50%" y="563">व</tspan>
+        <tspan x="50%" y="203">प</tspan>
+        <tspan x="50%" y="383">रि</tspan>
+        <tspan x="50%" y="563">च</tspan>
+        <tspan x="50%" y="743">य</tspan>
       </text>
     </symbol>
   </defs>

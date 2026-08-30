@@ -1,4 +1,4 @@
-import profileImgLarge from '~/assets/raghav-profile.jpg';
+﻿import profileImgLarge from '~/assets/raghav-profile.jpg';
 import profileImgPlaceholder from '~/assets/raghav-profile.jpg'; // Using same image for placeholder for now
 import profileImg from '~/assets/raghav-profile.jpg';
 import { Button } from '~/components/button';
@@ -12,7 +12,7 @@ import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
 import { Fragment, useState } from 'react';
 import { media } from '~/utils/style';
-import katakana from './katakana.svg';
+import katakana from './katakana.svg?url';
 import styles from './profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
@@ -21,10 +21,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Raghav, currently studying Computer Science Engineering at Alliance University, Bengaluru (Expected 2028, CGPA: 8.55/10). I am a Cloud Security Engineer focused on AI/ML, Platform Engineering, and DevSecOps. My projects span enterprise security orchestration, AST-based codebase analysis, and machine-learning platforms. I build intelligent systems that actually ship.
+      Iâ€™m Raghav, currently studying Computer Science Engineering at Alliance University, Bengaluru (Expected 2028, CGPA: 8.55/10). I am a Cloud Security Engineer focused on AI/ML, Platform Engineering, and DevSecOps. My projects span enterprise security orchestration, AST-based codebase analysis, and machine-learning platforms. I build intelligent systems that actually ship.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Outside of engineering, I serve as the GDG Campus Co-Lead and participate in events like the Global AI Safety Hackathon and Claw Hack BLR. I’m always down for hearing about new projects, so feel free to drop me a line.
+      Outside of engineering, I serve as the GDG Campus Co-Lead and participate in events like the Global AI Safety Hackathon and Claw Hack BLR. Iâ€™m always down for hearing about new projects, so feel free to drop me a line.
     </Text>
   </Fragment>
 );
