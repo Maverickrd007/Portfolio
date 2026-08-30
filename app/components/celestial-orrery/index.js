@@ -1,1 +1,1 @@
-﻿export * from './celestial-orrery';
+export * from './celestial-orrery';

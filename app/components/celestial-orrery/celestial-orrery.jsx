@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { classes } from '~/utils/style';
 import styles from './celestial-orrery.module.css';
 

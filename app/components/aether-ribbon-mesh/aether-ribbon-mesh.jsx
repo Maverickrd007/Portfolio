@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTheme } from '~/components/theme-provider';
 import { classes } from '~/utils/style';
 import styles from './aether-ribbon-mesh.module.css';

@@ -1,1 +1,1 @@
-﻿export * from './floating-paths';
+export * from './floating-paths';

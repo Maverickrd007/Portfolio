@@ -1,4 +1,4 @@
-﻿import { Button } from '~/components/button';
+import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
 import { Footer } from '~/components/footer';

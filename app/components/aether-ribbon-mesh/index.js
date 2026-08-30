@@ -1,1 +1,1 @@
-﻿export * from './aether-ribbon-mesh';
+export * from './aether-ribbon-mesh';

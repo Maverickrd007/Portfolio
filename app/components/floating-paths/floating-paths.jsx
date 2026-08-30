@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { classes } from '~/utils/style';
 import styles from './floating-paths.module.css';
